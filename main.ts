@@ -1,0 +1,54 @@
+function DrawF () {
+    LCD1IN8.DrawLine(
+    57,
+    60,
+    57,
+    5,
+    LCD1IN8.Get_Color(LCD_COLOR.RED),
+    DOT_PIXEL.DOT_PIXEL_1,
+    LINE_STYLE.LINE_SOLID
+    )
+    LCD1IN8.DrawLine(
+    57,
+    60,
+    75,
+    63,
+    LCD1IN8.Get_Color(LCD_COLOR.RED),
+    DOT_PIXEL.DOT_PIXEL_1,
+    LINE_STYLE.LINE_SOLID
+    )
+    LCD1IN8.DrawLine(
+    57,
+    5,
+    73,
+    3,
+    LCD1IN8.Get_Color(LCD_COLOR.RED),
+    DOT_PIXEL.DOT_PIXEL_1,
+    LINE_STYLE.LINE_SOLID
+    )
+    LCD1IN8.DrawLine(
+    73,
+    3,
+    120,
+    5,
+    LCD1IN8.Get_Color(LCD_COLOR.RED),
+    DOT_PIXEL.DOT_PIXEL_1,
+    LINE_STYLE.LINE_SOLID
+    )
+    LCD1IN8.DrawLine(
+    120,
+    5,
+    120,
+    23,
+    LCD1IN8.Get_Color(LCD_COLOR.RED),
+    DOT_PIXEL.DOT_PIXEL_1,
+    LINE_STYLE.LINE_SOLID
+    )
+    LCD1IN8.LCD_Display()
+}
+LCD1IN8.LCD_Init()
+LCD1IN8.LCD_Clear()
+LCD1IN8.LCD_Display()
+basic.forever(function () {
+	
+})
