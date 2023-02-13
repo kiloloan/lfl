@@ -1,8 +1,12 @@
-function DessineLigne(Xs: number, Ys: number, Xe: number, Ye: number, colo: number) {
-    LCD1IN8.DrawLine(Xs, Ys, Xe, Ye, colo, DOT_PIXEL.DOT_PIXEL_1, LINE_STYLE.LINE_SOLID)
-}
-
-function DrawF() {
+def DessineLigne(Xs: number, Ys: number, Xe: number, Ye: number, colo: number):
+    LCD1IN8.draw_line(Xs,
+        Ys,
+        Xe,
+        Ye,
+        colo,
+        DOT_PIXEL.DOT_PIXEL_1,
+        LINE_STYLE.LINE_SOLID)
+def DrawF():
     DessineLigne(57, 63, 57, 12, 63488)
     DessineLigne(57, 12, 70, 8, 63488)
     DessineLigne(70, 8, 111, 11, 63488)
@@ -53,11 +57,10 @@ function DrawF() {
     DessineLigne(110, 75, 120, 72, 2016)
     DessineLigne(104, 80, 89, 60, 2016)
     LCD1IN8.LCD_Display()
-}
-
 LCD1IN8.LCD_Init()
 LCD1IN8.LCD_Clear()
 LCD1IN8.LCD_Display()
-basic.forever(function on_forever() {
-    
-})
+
+def on_forever():
+    pass
+basic.forever(on_forever)
